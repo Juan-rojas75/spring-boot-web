@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLead.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Enviar parametros del request http GET - URL</title>
+</head>
+<body>
+<h1> Enviar parametros del request http GET - URL</h1>
+<ul>
+<li>
+<a th:href="@{/params/string(texto='Hola andres')}">/params/string?texto=Hola andres</a>
+</li>
+<li>
+<a th:href="@{/params/string(texto='que tal juan')}">/params/string?texto=que tal juan</a>
+</li>
+<li>
+<a th:href="@{/params/mix-params(saludo='que tal juan', numero=10)}">/params/mix-params?saludo=que tal juan&numero=10</a>
+</li>
+	<li>
+<a th:href="@{/params/mix-params-request(saludo='que tal juan', numero=10)}">/params/mix-params-request?saludo=que tal juan&numero=10</a>
+</li>
+
+</ul>
+	
+</body>
+</html>
